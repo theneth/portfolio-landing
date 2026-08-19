@@ -724,14 +724,6 @@ function App() {
                   </li>
                 ))}
               </ul>
-
-              <div className="award-callout">
-                <LuTrophy aria-hidden="true" />
-                <div>
-                  <strong>Outstanding Engineering Excellence Award</strong>
-                  <span>Aurasync Technologies, 2025</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
