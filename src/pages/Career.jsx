@@ -89,26 +89,20 @@ export default function Career() {
   return (
     <div className="career-page">
       {/* Master Header */}
-      <section className="career-section-dark" style={{ paddingTop: '100px' }}>
-        <header className="master-header">
+      <section className="career-section-dark" id="career" aria-labelledby="career-title" style={{ paddingTop: '100px' }}>
+        <header className="projects-header" style={{ marginBottom: '4rem' }}>
           <span className="section-kicker">Professional Journey</span>
-          <h2 className="master-title">
+          <h2 id="career-title">
             <strong>Career</strong>
             <span>Timeline</span>
           </h2>
-          <p className="master-description">
-            A comprehensive overview of my professional roles, key responsibilities, tools utilized, and major projects delivered across the cybersecurity industry.
-          </p>
         </header>
       </section>
 
-      {/* Alternating Company Sections */}
-      {careerData.map((company, index) => {
-        const isDark = index % 2 !== 0;
-        const sectionClass = isDark ? "career-section-dark" : "career-section-light";
-        
+      {/* Dark Company Sections */}
+      {careerData.map((company) => {
         return (
-          <section key={company.company} className={sectionClass}>
+          <section key={company.company} className="career-section-dark">
             <div className="company-container">
               <div className="company-header">
                 <div className="company-title-wrapper">
