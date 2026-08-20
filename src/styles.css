@@ -3318,3 +3318,56 @@ a:focus-visible {
     text-align: center;
   }
 }
+
+
+/* ==========================================================================
+   UNIFIED PAGE TEMPLATE CLASSES
+   ========================================================================== */
+
+.page-section-dark {
+  position: relative;
+  background: var(--bg);
+  color: var(--paper);
+  padding: 120px max(var(--gutter), calc((100vw - 88rem) / 2)) clamp(5rem, 9vh, 7rem);
+}
+
+.page-container {
+  max-width: 88rem;
+  margin: 0 auto;
+}
+
+.master-header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.master-header .section-kicker {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-size: clamp(0.75rem, 1vw, 0.85rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.master-header h2 {
+  margin: 0;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 300;
+  line-height: 1;
+}
+
+.master-header h2 strong {
+  font-weight: 700;
+  display: block;
+}
+
+
+.page-section-light {
+  position: relative;
+  background: #ffffff;
+  color: #050505;
+  padding: 120px max(var(--gutter), calc((100vw - 88rem) / 2)) clamp(5rem, 9vh, 7rem);
+}
+

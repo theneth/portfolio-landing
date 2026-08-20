@@ -70,10 +70,10 @@ export default function Credentials() {
   return (
     <div className="credentials-page">
       {/* Dark Section: Higher Education */}
-      <section className="credentials-section credentials-section-dark" id="education" style={{ paddingTop: '100px' }}>
-        <div className="credentials-container">
+      <section className="page-section-dark" id="education">
+        <div className="page-container">
           
-          <header className="credentials-header" style={{ marginBottom: '4rem' }}>
+          <header className="master-header">
             <span className="section-kicker">Verified Excellence</span>
             <h2 id="credentials-title">
               <strong>Professional</strong>
@@ -100,8 +100,8 @@ export default function Credentials() {
       </section>
 
       {/* Light Section: Research & Publications */}
-      <section className="credentials-section credentials-section-light" id="publications">
-        <div className="credentials-container">
+      <section className="page-section-light credentials-section-light" id="publications">
+        <div className="page-container">
           <div className="project-category-block">
             <h3 className="category-title">Research & Publications</h3>
             <p className="category-subtitle">Peer-reviewed academic contributions to cybersecurity and machine learning.</p>
@@ -126,8 +126,8 @@ export default function Credentials() {
       </section>
 
       {/* Dark Section: Certifications */}
-      <section className="credentials-section credentials-section-dark" id="certifications">
-        <div className="credentials-container">
+      <section className="page-section-dark" id="certifications">
+        <div className="page-container">
           <div className="project-category-block">
             <h3 className="category-title">Industry Certifications</h3>
             <p className="category-subtitle">Recognized certifications from leading cybersecurity organizations.</p>
@@ -147,8 +147,8 @@ export default function Credentials() {
       </section>
 
       {/* Light Section: Industry Awards */}
-      <section className="credentials-section credentials-section-light" id="awards">
-        <div className="credentials-container">
+      <section className="page-section-light credentials-section-light" id="awards">
+        <div className="page-container">
           <div className="project-category-block">
             <h3 className="category-title">Industry Awards</h3>
             <p className="category-subtitle">Formal recognition for engineering and operational excellence.</p>

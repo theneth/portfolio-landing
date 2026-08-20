@@ -88,11 +88,11 @@ const careerData = [
 export default function Career() {
   return (
     <div className="career-page">
-      <section className="career-section-dark" id="career" aria-labelledby="career-title" style={{ paddingTop: '100px' }}>
-        <div className="company-container">
+      <section className="page-section-dark" id="career" aria-labelledby="career-title">
+        <div className="page-container">
           
           {/* Master Header */}
-          <header className="projects-header" style={{ marginBottom: '4rem' }}>
+          <header className="master-header">
             <span className="section-kicker">Professional Journey</span>
             <h2 id="career-title">
               <strong>Career</strong>

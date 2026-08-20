@@ -94,9 +94,9 @@ export default function Projects() {
   return (
     <>
       {/* Dark Section: Enterprise & Company Work */}
-      <section className="projects-section projects-section-dark" id="projects" aria-labelledby="projects-title" style={{ marginTop: '100px' }}>
-        <div className="projects-container">
-          <header className="projects-header" style={{ marginBottom: '4rem' }}>
+      <section className="page-section-dark" id="projects" aria-labelledby="projects-title">
+        <div className="page-container">
+          <header className="master-header">
             <span className="section-kicker">Proof of work</span>
             <h2 id="projects-title">
               <strong>Featured</strong>
