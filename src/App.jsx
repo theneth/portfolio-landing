@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Career from "./pages/Career";
 import Projects from "./pages/Projects";
 import Credentials from "./pages/Credentials";
+import Contact from "./pages/Contact";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,7 +32,7 @@ function App() {
             <Link to="/career">Career</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/credentials">Credentials</Link>
-            <a href="mailto:stheneth@gmail.com">Contact</a>
+            <Link to="/contact">Contact</Link>
           </nav>
 
           <span className="header-rule" aria-hidden="true" />
@@ -42,6 +43,7 @@ function App() {
           <Route path="/career" element={<Career />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/credentials" element={<Credentials />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         <footer className="site-footer">
