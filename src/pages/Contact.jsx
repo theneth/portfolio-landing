@@ -1,10 +1,11 @@
 import { LuMail } from "react-icons/lu";
-import { FaAws, FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { FaAws, FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 
 const links = {
   github: "https://github.com/theneth",
   email: "mailto:stheneth@gmail.com",
   linkedin: "https://www.linkedin.com/in/ariyarathne/",
+  whatsapp: "https://wa.me/94770450564",
 };
 
 export default function Contact() {
@@ -34,6 +35,18 @@ export default function Contact() {
                 <LuMail aria-hidden="true" />
               </span>
               <span className="contact-link-label">stheneth@gmail.com</span>
+            </a>
+            <a
+              className="contact-link"
+              href={links.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="WhatsApp chat"
+            >
+              <span className="contact-link-icon">
+                <FaWhatsapp aria-hidden="true" />
+              </span>
+              <span className="contact-link-label">+94 77 0 450 564</span>
             </a>
             <a
               className="contact-link"
