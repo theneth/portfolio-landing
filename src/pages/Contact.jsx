@@ -34,7 +34,6 @@ export default function Contact() {
               <span className="contact-link-icon">
                 <LuMail aria-hidden="true" />
               </span>
-              <span className="contact-link-label">stheneth@gmail.com</span>
             </a>
             <a
               className="contact-link"
@@ -46,7 +45,6 @@ export default function Contact() {
               <span className="contact-link-icon">
                 <FaWhatsapp aria-hidden="true" />
               </span>
-              <span className="contact-link-label">+94 77 0 450 564</span>
             </a>
             <a
               className="contact-link"
@@ -58,7 +56,6 @@ export default function Contact() {
               <span className="contact-link-icon">
                 <FaLinkedinIn aria-hidden="true" />
               </span>
-              <span className="contact-link-label">linkedin.com/in/ariyarathne</span>
             </a>
             <a
               className="contact-link"
@@ -70,7 +67,6 @@ export default function Contact() {
               <span className="contact-link-icon">
                 <FaGithub aria-hidden="true" />
               </span>
-              <span className="contact-link-label">github.com/theneth</span>
             </a>
           </div>
         </div>
