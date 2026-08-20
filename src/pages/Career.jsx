@@ -88,25 +88,26 @@ const careerData = [
 export default function Career() {
   return (
     <div className="career-page">
-      {/* Master Header */}
       <section className="career-section-dark" id="career" aria-labelledby="career-title" style={{ paddingTop: '100px' }}>
-        <header className="projects-header" style={{ marginBottom: '4rem' }}>
-          <span className="section-kicker">Professional Journey</span>
-          <h2 id="career-title">
-            <strong>Career</strong>
-            <span>Timeline</span>
-          </h2>
-        </header>
-      </section>
+        <div className="company-container">
+          
+          {/* Master Header */}
+          <header className="projects-header" style={{ marginBottom: '4rem' }}>
+            <span className="section-kicker">Professional Journey</span>
+            <h2 id="career-title">
+              <strong>Career</strong>
+              <span>Timeline</span>
+            </h2>
+          </header>
 
-      {/* Dark Company Sections */}
-      {careerData.map((company) => {
-        return (
-          <section key={company.company} className="career-section-dark">
-            <div className="company-container">
-              <div className="company-header">
-                <div className="company-title-wrapper">
-                  <div className="company-icon-box">
+          {/* Dark Company Sections */}
+          <div className="career-companies-list" style={{ display: 'flex', flexDirection: 'column', gap: '6rem' }}>
+            {careerData.map((company) => {
+              return (
+                <div key={company.company} className="company-block">
+                  <div className="company-header">
+                    <div className="company-title-wrapper">
+                      <div className="company-icon-box">
                     <LuBriefcase aria-hidden="true" />
                   </div>
                   <div>
@@ -178,9 +179,12 @@ export default function Career() {
 
               </div>
             </div>
-          </section>
+          </div>
         );
       })}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
