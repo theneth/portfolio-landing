@@ -428,7 +428,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="toolkit-section" id="toolkit" aria-labelledby="toolkit-title">
+      <section className="page-section-dark toolkit-section" id="toolkit" aria-labelledby="toolkit-title">
         <div className="toolkit">
           <div className="toolkit-groups">
             {toolkitGroups.map((group) => (

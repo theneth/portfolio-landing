@@ -647,13 +647,6 @@ a:focus-visible {
   flex-direction: column;
   justify-content: space-evenly;
   min-height: 100svh;
-  padding:
-    clamp(5rem, 9vh, 7rem)
-    max(var(--gutter), calc((100vw - 88rem) / 2))
-    clamp(5rem, 9vh, 7rem);
-  color: #050505;
-  background: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
 }
 
@@ -694,18 +687,22 @@ a:focus-visible {
 }
 
 .toolkit-heading h3 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 300;
+  line-height: 1.1;
   margin: 0;
-  max-width: none;
-  font-size: clamp(2rem, 3.5vw, 3.2rem);
-  font-weight: 400;
-  line-height: 1.05;
-  letter-spacing: -0.05em;
+  color: var(--paper);
+}
+
+.toolkit-heading h3 strong {
+  font-weight: 700;
+  display: block;
 }
 
 .toolkit-description {
   font-size: clamp(1.05rem, 1.3vw, 1.25rem);
   line-height: 1.6;
-  color: #4b5563;
+  color: var(--muted);
   margin-top: 1.5rem;
 }
 
@@ -720,14 +717,15 @@ a:focus-visible {
   position: relative;
   min-width: 0;
   padding: 2.5rem;
-  background-color: #fafafa;
-  border: 1px solid #eaeaea;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   animation: enter-up 800ms cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-timeline: view();
   animation-range: entry 5% cover 25%;
@@ -735,7 +733,9 @@ a:focus-visible {
 
 .toolkit-group:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  border-color: color-mix(in srgb, var(--toolkit-accent) 40%, rgba(255,255,255,0.1));
+  background: linear-gradient(135deg, color-mix(in srgb, var(--toolkit-accent) 5%, transparent), rgba(255, 255, 255, 0.01));
+  box-shadow: 0 10px 40px -10px color-mix(in srgb, var(--toolkit-accent) 15%, transparent);
 }
 
 .toolkit-group-cyan {
@@ -756,20 +756,27 @@ a:focus-visible {
 
 .toolkit-group h4 {
   margin: 0;
-  color: var(--toolkit-accent);
+  color: var(--paper);
   font-size: clamp(0.7rem, 0.8vw, 0.85rem);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  border-bottom: 2px solid var(--toolkit-accent);
   padding-bottom: 0.5rem;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   align-self: flex-start;
 }
 
-.toolkit-group-cyan h4 {
-  color: #0b9ea6; /* Darker cyan for white background */
+.toolkit-group h4::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--toolkit-accent);
+  box-shadow: 0 0 8px var(--toolkit-accent);
 }
 
 .toolkit-group .toolkit-icons {
@@ -788,18 +795,17 @@ a:focus-visible {
   place-items: center;
   width: clamp(2.85rem, 3.8vw, 3.8rem);
   aspect-ratio: 1;
-  color: var(--tool-color);
-  background:
-    linear-gradient(145deg, color-mix(in srgb, var(--tool-color) 16%, transparent), transparent 62%),
-    #f8f9fa; /* Light background */
-  border: 1px solid color-mix(in srgb, var(--tool-color) 42%, #d1d5db);
+  color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 0.7rem;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0,0,0,0.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition:
-    transform 180ms ease,
-    border-color 180ms ease,
-    background-color 180ms ease,
-    box-shadow 180ms ease;
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .toolkit-icon svg {
@@ -814,9 +820,11 @@ a:focus-visible {
 }
 
 .toolkit-icon:hover {
-  transform: translateY(-3px);
-  border-color: var(--tool-color);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 4px 12px color-mix(in srgb, var(--tool-color) 20%, transparent);
+  transform: scale(1.15) translateY(-3px);
+  border-color: color-mix(in srgb, var(--tool-color) 50%, transparent);
+  background: color-mix(in srgb, var(--tool-color) 12%, rgba(255,255,255,0.05));
+  color: var(--tool-color);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--tool-color) 30%, transparent);
 }
 
 .toolkit-icon:focus-visible {
