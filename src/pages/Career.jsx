@@ -1,4 +1,4 @@
-import { LuBriefcase, LuMapPin, LuCalendar, LuCheckCircle, LuTerminal, LuFolderGit2 } from "react-icons/lu";
+import { LuBriefcase, LuMapPin, LuCalendar, LuCircleCheck, LuTerminal, LuFolderGit2 } from "react-icons/lu";
 
 const careerData = [
   {
@@ -149,7 +149,7 @@ export default function Career() {
                     <ul className="achievement-list">
                       {company.responsibilities.map((resp, i) => (
                         <li key={i} className="achievement-item">
-                          <LuCheckCircle className="achievement-icon" aria-hidden="true" />
+                          <LuCircleCheck className="achievement-icon" aria-hidden="true" />
                           <span>{resp}</span>
                         </li>
                       ))}
