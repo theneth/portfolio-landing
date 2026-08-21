@@ -15,7 +15,7 @@ export default function Contact() {
       <SEO 
         title="Contact | Ariyarathna B.D.T.S.P." 
         description="Get in touch for international cybersecurity roles, consulting engagements, and freelance security projects."
-        url="https://theneth.dev/contact"
+        url="https://theneth-is-a-dev.vercel.app/contact"
       />
       <section className="contact-section" id="contact" style={{ width: '100%' }}>
         <div className="contact-container">

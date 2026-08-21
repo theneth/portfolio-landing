@@ -73,7 +73,7 @@ export default function Credentials() {
       <SEO 
         title="Credentials & Certifications | Ariyarathna B.D.T.S.P." 
         description="View my professional cybersecurity credentials, industry certifications, higher education details, and published research."
-        url="https://theneth.dev/credentials"
+        url="https://theneth-is-a-dev.vercel.app/credentials"
       />
       {/* Dark Section: Higher Education */}
       <section className="page-section-dark" id="education">

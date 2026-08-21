@@ -97,7 +97,7 @@ export default function Projects() {
       <SEO 
         title="Projects | Ariyarathna B.D.T.S.P." 
         description="Featured security projects, from enterprise DevSecOps pipelines to secure microservices architecture and cloud security implementations."
-        url="https://theneth.dev/projects"
+        url="https://theneth-is-a-dev.vercel.app/projects"
       />
       {/* Dark Section: Enterprise & Company Work */}
       <section className="page-section-dark" id="projects" aria-labelledby="projects-title">

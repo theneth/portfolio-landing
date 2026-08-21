@@ -92,7 +92,7 @@ export default function Career() {
       <SEO 
         title="Career | Ariyarathna B.D.T.S.P." 
         description="Professional journey as a Security Software Engineer, detailing roles at Aurasync Technologies, Sysflicx IT Solutions, and Avian Technologies."
-        url="https://theneth.dev/career"
+        url="https://theneth-is-a-dev.vercel.app/career"
       />
       <section className="page-section-dark" id="career" aria-labelledby="career-title">
         <div className="page-container">

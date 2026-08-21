@@ -6,7 +6,7 @@ export default function SEO({
   description = "Ariyarathna B.D.T.S.P. — Security Software Engineer specialising in application security, DevSecOps, cloud and network security.",
   name = "Ariyarathna B.D.T.S.P.",
   type = "website",
-  url = "https://theneth.dev" // Default placeholder, user can update later
+  url = "https://theneth-is-a-dev.vercel.app" // Default placeholder, user can update later
 }) {
   return (
     <Helmet>

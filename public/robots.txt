@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://theneth.dev/sitemap.xml
+Sitemap: https://theneth-is-a-dev.vercel.app/sitemap.xml
