@@ -1,5 +1,6 @@
 import { LuMail } from "react-icons/lu";
 import { FaAws, FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
+import SEO from "../components/SEO";
 
 const links = {
   github: "https://github.com/theneth",
@@ -11,6 +12,11 @@ const links = {
 export default function Contact() {
   return (
     <div className="contact-page" style={{ paddingTop: '100px', paddingBottom: '100px', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
+      <SEO 
+        title="Contact | Ariyarathna B.D.T.S.P." 
+        description="Get in touch for international cybersecurity roles, consulting engagements, and freelance security projects."
+        url="https://theneth.dev/contact"
+      />
       <section className="contact-section" id="contact" style={{ width: '100%' }}>
         <div className="contact-container">
           <div className="contact-content">

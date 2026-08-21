@@ -1,4 +1,5 @@
 import { LuArrowUpRight, LuGlobe } from "react-icons/lu";
+import SEO from "../components/SEO";
 
 const aurasyncProjects = [
   {
@@ -93,6 +94,11 @@ const webDevProjects = [
 export default function Projects() {
   return (
     <>
+      <SEO 
+        title="Projects | Ariyarathna B.D.T.S.P." 
+        description="Featured security projects, from enterprise DevSecOps pipelines to secure microservices architecture and cloud security implementations."
+        url="https://theneth.dev/projects"
+      />
       {/* Dark Section: Enterprise & Company Work */}
       <section className="page-section-dark" id="projects" aria-labelledby="projects-title">
         <div className="page-container">

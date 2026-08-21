@@ -1,4 +1,5 @@
 import { LuShieldCheck, LuGraduationCap, LuAward, LuArrowUpRight } from "react-icons/lu";
+import SEO from "../components/SEO";
 
 const certifications = [
   { 
@@ -69,6 +70,11 @@ const awards = [
 export default function Credentials() {
   return (
     <div className="credentials-page">
+      <SEO 
+        title="Credentials & Certifications | Ariyarathna B.D.T.S.P." 
+        description="View my professional cybersecurity credentials, industry certifications, higher education details, and published research."
+        url="https://theneth.dev/credentials"
+      />
       {/* Dark Section: Higher Education */}
       <section className="page-section-dark" id="education">
         <div className="page-container">

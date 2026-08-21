@@ -1,4 +1,5 @@
 import { LuBriefcase, LuMapPin, LuCalendar, LuCircleCheck, LuTerminal, LuFolderGit2 } from "react-icons/lu";
+import SEO from "../components/SEO";
 
 const careerData = [
   {
@@ -88,6 +89,11 @@ const careerData = [
 export default function Career() {
   return (
     <div className="career-page">
+      <SEO 
+        title="Career | Ariyarathna B.D.T.S.P." 
+        description="Professional journey as a Security Software Engineer, detailing roles at Aurasync Technologies, Sysflicx IT Solutions, and Avian Technologies."
+        url="https://theneth.dev/career"
+      />
       <section className="page-section-dark" id="career" aria-labelledby="career-title">
         <div className="page-container">
           

@@ -176,6 +176,8 @@ function PlusIcon() {
   );
 }
 
+import SEO from "../components/SEO";
+
 export default function Home() {
   const [activeExpertise, setActiveExpertise] = useState(null);
   const heroRef = useRef(null);
@@ -282,6 +284,7 @@ export default function Home() {
       onMouseMoveCapture={handleSpotlightBoundary}
       onMouseLeave={handleSpotlightLeave}
     >
+      <SEO />
       <section
         ref={heroRef}
         className="hero"
