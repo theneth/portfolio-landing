@@ -2,17 +2,20 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 export default function SEO({ 
-  title = "Ariyarathna B.D.T.S.P. — Security Portfolio", 
-  description = "Ariyarathna B.D.T.S.P. — Security Software Engineer specialising in application security, DevSecOps, cloud and network security.",
-  name = "Ariyarathna B.D.T.S.P.",
+  title = "Theneth Sanjuka Ariyarathna — Security Portfolio", 
+  description = "Theneth Sanjuka Ariyarathna (B.D.T.S.P.) — Security Software Engineer specialising in application security, DevSecOps, cloud and network security.",
+  name = "Theneth Sanjuka Ariyarathna",
   type = "website",
-  url = "https://theneth-is-a-dev.vercel.app" // Default placeholder, user can update later
+  url = "https://theneth-is-a-dev.vercel.app" 
 }) {
+  const keywords = "Theneth, Sanjuka, Theneth Sanjuka, Theneth Sanjuka Ariyarathna, Ariyarathna B.D.T.S.P, Security Engineer, Software Engineer, Cybersecurity, Sri Lanka, DevSecOps";
+  
   return (
     <Helmet>
       {/* Standard metadata tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
       <meta name="author" content={name} />
       <link rel="canonical" href={url} />
 
